@@ -76,7 +76,7 @@ public class Tile extends AbstractTile implements Clickable {
 		public void handleClick() {
 			if (bomb) {
 				System.out.println("Game Over!");
-				gameBoard.setGameOver(true); // Now accessible
+				gameBoard.setGameOver(true);
 				gameBoard.revealAllMines();
 				if (gameBoard.getGameOverCallback() != null) {
 					gameBoard.getGameOverCallback().onGameOver(false);
